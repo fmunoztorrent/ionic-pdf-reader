@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-button
+      (click)="
+        download(
+          'https://www.alejandrodelasota.org/wp-content/uploads/2013/03/demoform1.pdf',
+          'Demo PDF'
+        )
+      "
+      >Click to View Doc</ion-button
+    >
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "pdf-reader",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

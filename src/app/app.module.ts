@@ -14,6 +14,9 @@ import { PdfViewerService } from "./services/pdf-viewer.service";
 import { FileOpener } from "@ionic-native/file-opener/ngx";
 import { File } from "@ionic-native/file/ngx";
 import { FileTransfer } from "@ionic-native/file-transfer/ngx";
+import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +24,8 @@ import { FileTransfer } from "@ionic-native/file-transfer/ngx";
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
@@ -30,6 +34,8 @@ import { FileTransfer } from "@ionic-native/file-transfer/ngx";
     FileOpener,
     File,
     PdfViewerService,
+    HttpClientModule,
+    DocumentViewer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
